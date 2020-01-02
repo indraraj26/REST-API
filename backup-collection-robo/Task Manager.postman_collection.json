@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "f6f9feec-d03c-496a-8277-a9b6473c2f26",
+		"name": "Task Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"asdsadsad\",\n\t\"email\": \"test@test.com\",\n\t\"password\": \"robololwa\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/users/5e0d8897645591137c883ede",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"5e0d8897645591137c883ede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Alexa\",\n\t\"lolwa\": \"adasdsad\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/users/5e0d8897645591137c883ede",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"5e0d8897645591137c883ede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/users/5e0d8897645591137c883ede",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"5e0d8897645591137c883ede"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"description\": \"buy an sdasdsadas\",\n\t\"completed\": true\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/tasks/5e0d89b8645591137c883ee1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tasks",
+						"5e0d89b8645591137c883ee1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update task",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"completed\": false\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/tasks/5e0d89b8645591137c883ee1",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tasks",
+						"5e0d89b8645591137c883ee1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/tasks/5e0d8fdd8495ce315caae5dd",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tasks",
+						"5e0d8fdd8495ce315caae5dd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
